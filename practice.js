@@ -7,18 +7,32 @@
 
 // 1. **Simple Array Loop**  
 //    Write a `for` loop that logs each element of the array `[5, 10, 15, 20]` to the console.  
-
+//const numArr = [5, 10, 15, 20];
+// for (let i = 0; i < numArr.length; i++) {
+//   console.log(numArr[i]);
+// }
+// }
 
 
 // 2. **Summing Array Elements**  
 //    Use a loop to calculate the sum of all numbers in `[1, 2, 3, 4, 5]` and log the result.  
-
-
+// const sumArr = [1, 2, 3, 4, 5];
+// let count = 0;
+// for (let i = 0; i < sumArr.length; i++) {
+//   count += sumArr[i];
+//}
+// console.log(count);
 
 // 3. **Filter Even Numbers**  
 //    Loop through `[12, 7, 9, 24, 18]` and create a new array containing only even numbers.  
-
-
+// const randArr = [12, 7, 9, 24, 18];
+// const evenArr = randArr.filter(elem => elem % 2 === 0);
+// for (let i = 0; i < randArr.length; i++) { 
+//   if (randArr[i] % 2 === 0) {
+//     evenArr.push(randArr[i])
+//   }
+// }
+// console.log(evenArr);
 
 // ---
 
@@ -28,47 +42,68 @@
 // 4. **Access Object Properties**  
 //    Given:  
  
-const users = [{name: "Alice", age: 25}, {name: "Bob", age: 30}];
+// const users = [{name: "Alice", age: 25}, {name: "Bob", age: 30}];
 
 //    Loop through `users` and log each user’s name.  
-
+// for (let user of users) {
+//   console.log(user.name);
+// }
 
 
 // 5. **Find a Specific Object**  
 //    Using the `users` array above, find and log the object where `name === "Bob"`.  
-
+// for (let user of users) {
+//   if (user.name === 'Bob') {
+//     console.log(user);
+//   }
+// }
 
 
 // 6. **Calculate Average Age**  
 //    Loop through `users` and compute the average age.  
+// let ageSum = 0;
 
-// 
+// for (user of users) {
+//   ageSum += user.age
+// }
+// const avgAge = ageSum / users.length;
+// console.log(avgAge);
+
 
 // ### **Section 3: Built-in Loop Methods**  
 
 
 // 7. **`forEach` Practice**  
 //    Use `forEach` to log each element 
-const myArray = ["apple", "banana", "cherry"]; 
+// const myArray = ["apple", "banana", "cherry"]; 
+// myArray.forEach (element => console.log(element));
 
 
 // 8. **`map` Transformation**  
-const thisArray = [1, 2, 3];
+// const thisArray = [1, 2, 3];
 // use `map` to create a new array where each number is doubled. 
+// const doubleArr = thisArray.map(function(num) {
+//   console.log(num * 2);
+// });
+// const doubleArr = thisArray.map(num => console.log(num * 2));
+
 
 
 // 9. **`filter` with Condition**  
-const grades =[15, 3, 25, 8, 10];
+// const grades =[15, 3, 25, 8, 10];
 
-//use `filter` to keep numbers greater than 10.  
-
+// //use `filter` to keep numbers greater than 10.  
+// const highGrades = grades.filter(num => num > 10);
+// console.log(highGrades);
 
 
 // 10. **`find` First Match**  
 //     Use `find` to get the first number > 50 in 
 // 
-const finder = [20, 45, 60, 70]; 
-
+// const finder = [20, 45, 60, 70]; 
+// const found = finder.find(num => num > 50);
+// console.log(found);
+/*
 // 11. **`reduce` for Aggregation**  
 //     Use `reduce` to multiply all numbers in `[2, 3, 4]` (result: `24`).  
 
@@ -250,3 +285,4 @@ function getUsernames(users) {
   // your code here
 }
 
+*/
