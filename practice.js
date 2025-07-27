@@ -157,3 +157,96 @@ let secondArray = [3, 4];
 
 
 
+*** EXTRAS ***
+
+// Write a function that takes an array of numbers and returns their sum.
+function sumArray(arr) {
+  // your code here
+}
+
+
+
+// Given an array of student objects, return an array of names of students who passed (score >= 60).
+const students = [
+  { name: "Alice", score: 75 },
+  { name: "Bob", score: 52 },
+  { name: "Charlie", score: 90 }
+];
+
+function getPassingStudents(arr) {
+  // your code here
+}
+
+
+// Given an array of numbers, return a new array where all odd numbers are doubled, even numbers stay the same.
+function doubleOdds(arr) {
+  // your code here
+}
+
+
+// use .filter() and .map()
+
+// Write a function that takes an array of ages and returns an array of messages:
+// ["You can vote", "You can’t vote"] depending on whether age is 18 or older.
+
+function votingMessages(ages) {
+  // your code here
+}
+
+
+// Use `.find()` to return the first user with an admin role.
+const users = [
+  { username: "dan", role: "user" },
+  { username: "amy", role: "admin" },
+  { username: "liz", role: "user" }
+];
+
+function findAdmin(users) {
+  // your code here
+}
+
+
+
+// Write a function that takes a string and replaces every other word with "___"
+const sentence = "I will ace this JavaScript assessment with confidence";
+
+function censorEveryOtherWord(str) {
+  // your code here
+}
+
+
+// Reverse only the vowels in a given string. Leave consonants in place.
+// e.g. "hello" => "holle"
+
+function reverseVowels(str) {
+  // your code here
+}
+
+
+
+// Write a function that accepts an array of numbers and another function.
+// Return a new array with the function applied to each number.
+
+function applyFunction(arr, func) {
+  // your code here
+}
+
+// Example usage:
+const result = applyFunction([1, 2, 3], function(n) { return n * 3 });
+// result should be [3, 6, 9]
+
+
+// Given an array of user objects with 'name' and 'email',
+// return an array of usernames (name in lowercase, spaces replaced with underscores)
+// but only for users with valid emails (must include "@")
+
+const users = [
+  { name: "Alice Johnson", email: "alice@gmail.com" },
+  { name: "Bob Smith", email: "bob[at]yahoo.com" },
+  { name: "Charlie Day", email: "charlie@outlook.com" }
+];
+
+function getUsernames(users) {
+  // your code here
+}
+
