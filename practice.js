@@ -103,10 +103,12 @@
 // const finder = [20, 45, 60, 70]; 
 // const found = finder.find(num => num > 50);
 // console.log(found);
-/*
+
 // 11. **`reduce` for Aggregation**  
 //     Use `reduce` to multiply all numbers in `[2, 3, 4]` (result: `24`).  
-
+// const numberArray = [2, 3, 4];
+// const numsProd = numberArray.reduce((acc, num) => num * acc);
+// console.log(numsProd);
 // ---
 
 // ### **Section 4: String Manipulation**  
@@ -115,24 +117,27 @@
 // 12. **Slice a String**  
     // Slice `"JavaScript"` to extract `"Script"`.  
 
-    const string1 = "JavaScript";
+    // const string1 = "JavaScript";
+    // console.log(string1.slice(4));
 
 // 13. **Split and Join**  
 //     Split `"hello-world"` into an array by `-`, then join back with `_`.
 // intended output: "hello_world"
 
-const splitString = "hello-world"
+// const splitString = "hello-world";
+// console.log(splitString.split('-').join('_'));
 
 // 14. **Uppercase Transformation**  
 //     Convert `"example"` to uppercase using a string method.  
 
-let transform = "example";
+// let transform = "example";
+// console.log(transform.toUpperCase());
 
 // 15. **Check Substring**  
 //     Check if `"programming"` contains `"gram"` and log `true` or `false`.  
 
- let spellCheck = "programming"
-
+//  let spellCheck = "programming"
+// console.log(spellCheck.includes('gram'));
 
 // ### **Section 5: Array Transformations with Functions**  
 // 
@@ -140,23 +145,26 @@ let transform = "example";
 // 16. **Apply Function to Array**
 //   Apply `addTwo` to each element in `[3, 6, 9]` using `map`.   
 
-const addTwo = num => num + 2;
+// const addTwo = num => num + 2;
 
-let myNums = [3, 6, 9];
-
+// let myNums = [3, 6, 9];
+// console.log(myNums.map(addTwo));
  
 
 // 17. **Custom Filter Function**  
 //     Write a function `isLongWord(word)` that returns `true` if `word.length > 5`.  
 //     Use it to filter myFruits 
-const myFruit = ["apple", "banana", "kiwi"];  
+// const myFruit = ["apple", "banana", "kiwi"];  
+
+// const isLongWord = word => word.length > 5;
+// console.log(myFruit.filter(isLongWord));
 
 // 18. **Chaining Methods**  
 //    Chain `map` (multiply by 3) and `filter` (keep even numbers).  
 
-let myNums2 = [1, 2, 3, 4];
-
-
+// let myNums2 = [1, 2, 3, 4];
+// let result = myNums2.map(num => num * 3).filter(num => num % 2 === 0);
+// console.log(result);
 
 // ### **Section 6: Mixed Challenges**  
 
@@ -166,17 +174,30 @@ let myNums2 = [1, 2, 3, 4];
 const data = [{id: 1, items: ["baseball", "soccer ball"]},   {id: 2, items: ["Game Boy"]}];
 
 //     Log all `items` for each object.  
-
+  // for (let item of data) {// iter over data arr and access obj at each index
+  //   console.log(item.items); // access items at each object and log
+  // }
 
 // 20. **Count String Occurrences**  
 //     Loop through mixedLetters  and count how many times "a" appears.  
-const mixedLetters = ["a", "b", "a", "c"];
+// const mixedLetters = ["a", "b", "a", "c"];
+// let count = 0;
+// function lettA(array) {
+//   for (let ele of array) {
+//     if (ele === 'a') {
+//       count++;
+//     }
+//   } return count;
+// } // function to search for 'a'
+
+// console.log(lettA(mixedLetters))
+
 
 // 21. **Flatten an Array**  
 //     Use `reduce` or loops to flatten the array flat into `[1, 2, 3, 4]; 
 
 const flat = [[1, 2], [3, 4]];
-
+console.log(flat.flat());
 // 22. **Sort and Reverse**  
 //     Sort `ages` in ascending order, then reverse it.  
 const ages = [10, 2, 5, 8];
