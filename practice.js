@@ -196,12 +196,29 @@ const data = [{id: 1, items: ["baseball", "soccer ball"]},   {id: 2, items: ["Ga
 // 21. **Flatten an Array**  
 //     Use `reduce` or loops to flatten the array flat into `[1, 2, 3, 4]; 
 
-const flat = [[1, 2], [3, 4]];
-console.log(flat.flat());
+// const flat = [[1, 2], [3, 4]];
+// const flatty = [];
+// for (let el of flat) {
+//   for (let i = 0; i < el.length; i++) {
+//     flatty.push(el[i]);
+//   }
+// }
+// const flattenedArr = flat.flat();
+// console.log(flattenedArr);
+
 // 22. **Sort and Reverse**  
 //     Sort `ages` in ascending order, then reverse it.  
 const ages = [10, 2, 5, 8];
-
+const orderedAges = [ages[0]];
+for (let i = 1                          ; i < ages.length; i++) {
+  if (ages[i] > orderedAges[0]) {
+    orderedAges.push(ages[i]);
+  }
+  else {
+    orderedAges.unshift(ages[i]);
+  }
+} 
+console.log(orderedAges);
 // 23. **Extract Object Keys**  
 //     Given `member1`, loop through its keys and log them.  
 const member1 = {name: "Tom", age: 28};
@@ -213,7 +230,7 @@ let secondArray = [3, 4];
 
 
 
-*** EXTRAS ***
+// *** EXTRAS ***
 
 // Write a function that takes an array of numbers and returns their sum.
 function sumArray(arr) {
@@ -251,13 +268,13 @@ function votingMessages(ages) {
 
 
 // Use `.find()` to return the first user with an admin role.
-const users = [
+const usersers = [
   { username: "dan", role: "user" },
   { username: "amy", role: "admin" },
   { username: "liz", role: "user" }
 ];
 
-function findAdmin(users) {
+function findAdmin(usersers) {
   // your code here
 }
 
@@ -296,7 +313,7 @@ const result = applyFunction([1, 2, 3], function(n) { return n * 3 });
 // return an array of usernames (name in lowercase, spaces replaced with underscores)
 // but only for users with valid emails (must include "@")
 
-const users = [
+const users1 = [
   { name: "Alice Johnson", email: "alice@gmail.com" },
   { name: "Bob Smith", email: "bob[at]yahoo.com" },
   { name: "Charlie Day", email: "charlie@outlook.com" }
@@ -306,4 +323,3 @@ function getUsernames(users) {
   // your code here
 }
 
-*/
